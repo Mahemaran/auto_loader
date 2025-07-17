@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoloader"
+version = "0.1.0"
+description = "AutoLoader for structured and unstructured documents using LangChain"
+authors = [
+  { name="Maran M", email="mahemaran99@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "langchain",
+    "langchain-unstructured"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+license = {text = "Apache 2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Mahemaran/auto_loader"
+Repository = "https://github.com/Mahemaran/auto_loader"
